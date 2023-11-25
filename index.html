@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link href="/fakeLoader.css" rel="stylesheet">
+    <link href="loader.css" rel="stylesheet">
+</head>
+<body>
+    <div class="fakeLoader"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js loader/fakeLoader.js"></script>
+
+    <script>
+        $(document).ready(function () {
+    $.fakeLoader({
+        bgColor: '#040B12',
+        spinner: "spinner3",
+        timeToHide: 1200, // Set the time for fakeLoader to be visible (in milliseconds)
+        zIndex: 999, // Set the z-index of the fakeLoader
+        onLoad: function () {
+            // Redirect to index.html when fakeLoader finishes loading
+            console.log("Redirecting to index.html");
+            window.location.href = "BaliHarmoni.html";
+        },
+        onError: function () {
+            console.error("Error loading fakeLoader");
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

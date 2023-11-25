@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Produk Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="">
+  <link href="">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS & Loader CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="css/fakeLoader.css" rel="stylesheet">
+</head>
+
+<body class="custom-background">
+  <style>
+    body.custom-background {
+      background-image: url(img/Bg-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .portfolio-details {
+      margin-top: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .breadcrumbs {
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 100% !important;
+      padding: 10px 0; /* tambahkan padding agar kontennya tidak menempel tepat di pinggir */
+    }
+    /* media query */
+    @media (min-width: 768px) {
+    .portfolio-details {
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+    }
+    .portfolio-description {
+        text-align:justify;
+    }
+    .breadcrumbs {
+      padding: 10px 0;
+    }
+  }
+
+  /* Gaya untuk layar kecil, seperti smartphone */
+  @media (max-width: 767px) {
+    .portfolio-details {
+      margin: 2rem 0;
+    }
+    .portfolio-description {
+        text-align:justify;
+    }
+    .breadcrumbs {
+      padding: 10px 0;
+    }
+  }
+
+  body.custom-background {
+    background-image: url(img/Bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .portfolio-info {
+    justify-content: center;
+    background-color:white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+ 
+.portfolio-description {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .breadcrumbs {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100% !important;
+  }
+  </style>
+  <div class="fakeLoader"></div>
+  <!-- ======= Mobile nav toggle button ======= -->
+
+  <!-- ======= Header ======= -->
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container" style="width: 100%; max-width: none;">
+
+        <div class="d-flex justify-content-between align-items-center fw-bold">
+          <h2 class="fw-bold">Detail Produk</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+          </ol>
+          <span> Detail Produk </span>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="img/camp1 - Copy.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/camp1 - Copy.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/camp1 - Copy.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/camp1 - Copy.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Deskripsi Produk</h3>
+              <ul>
+                <li><strong>Detail Produk :</strong> Lorem ipsum dolor sit amet. </li>
+                <li><strong>Include :</strong> Lorem ipsum dolor sit amet.</li>
+                <li><strong>Due Exp Date :</strong>12/12/2023</li>
+              </ul>
+            </div>
+              <h3 class="deskripsi-produk fw-bold mt-3 align-items-center justify-content-center">Deskripsi Produk</h3>
+              <p class="text-justify-content-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et cupiditate necessitatibus quidem? Molestiae maxime vitae similique nam corrupti tempore repellat voluptatem, et, labore ab veritatis.
+              </p>
+            </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/fakeLoader.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $.fakeLoader({
+          bgColor: '#040B12',
+          spinner: "spinner2"
+        });
+      });
+    </script>
+  </main><!-- End #main -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
